@@ -86,3 +86,8 @@ and call `bar(1:3) = foo`
      procedure you used, and the reasoning for each step.
    * You will notice that there is a state missing in the map. As above find the mistake and detail
      your approach to find and correct it.
+
+
+## Solutions
+
+Corrected functions can be found in the solutions folder. 
