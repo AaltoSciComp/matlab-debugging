@@ -167,6 +167,7 @@ As could be seen above, some mathematical expressions return NaN ("Not a Number"
 ### Operator precedence
 
 When writing down formulas for a computer, one has to be careful how the formula is interpreted. A formula of the type:
+
 <img src="https://render.githubusercontent.com/render/math?math=n \cdot \frac{n-1}{2}">
 
 is clear for a human. But you can't give it to a computer program in this form (well, at least not in most programming languages).
