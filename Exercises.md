@@ -2,9 +2,9 @@
 
 This repository contains a few Exercises files for Matlab Debugging along with pitfals using a few basic concepts like operator precedence, cell array access and overloading/visibility. 
 
-## Operator precedence
+## 1. Operator precedence
 
-1. Operator precedence can interfere with results sometimes in very drastic ways. Therefore it is always
+A. Operator precedence can interfere with results sometimes in very drastic ways. Therefore it is always
    useful to enclose individual operations in parenthesis. Symbolic variables ( [syms](http://nl.mathworks.com/help/symbolic/syms.html) ) can be used to create
    place holders in a formula. They provide the option to first encode the formula and then evaluate it
    with different variable settings.
@@ -18,7 +18,7 @@ This repository contains a few Exercises files for Matlab Debugging along with p
    * Implement a function res = calculateterm(x,y), that calculates the term in one assignment using
      parenthesis.
      
-2. Quadratic equations of the form `a x 2 + b x + c` commonly have one or two solutions which can be
+B. Quadratic equations of the form `a x 2 + b x + c` commonly have one or two solutions which can be
    easily determined as:
    
    <img src="https://render.githubusercontent.com/render/math?math=x_1,x_2 = \frac{-b}{2a} \pm\sqrt{\frac{b^2}{4a^2} - \frac{c}{a}}">
@@ -33,9 +33,9 @@ This repository contains a few Exercises files for Matlab Debugging along with p
    Find the mistake in solveSquareFunction. Correct it and explain what was causing the error
    and why you did your corrections.
    
-## Cell arrays and indexing
+## 2. Cell arrays and indexing
 
-3. Cell arrays are a special type of matlab arrays which are used for multiple purposes, and can store
+A. Cell arrays are a special type of matlab arrays which are used for multiple purposes, and can store
    multiple different datatypes. They can be accessed in two ways. By accessing the cells using () or
    by accessing the contents of the cells using {}. To assign data to a slice of a cell array, there are
    multiple options:
@@ -52,14 +52,14 @@ and call `bar(1:3) = foo`
      These calls will lead to errors. Explain what is wrong in the calls (e.g. what do the left and
      right hand sides of the assignments represent).
      
-4. The file [getNormalisedExpression.m](exercises/solveSquareFunction.m) is supposed to normalise gene expression data. However there is an error in the function
+B. The file [getNormalisedExpression.m](exercises/solveSquareFunction.m) is supposed to normalise gene expression data. However there is an error in the function
    * Run the function using the provided [ExprData.xlsx](data/ExprData.xlsx). Report the error.
    * Explain the error, what does it tell you?
    * Correct the error and explain what kind of mistake was done.
 
 
-## Overloading/Visibility
-5. [plotFilteredNormData](exercises/plotFilteredNormData.m) normalises data to a 0-1 range and plots the data in a scatter plot to
+## 3. Overloading/Visibility
+A. [plotFilteredNormData](exercises/plotFilteredNormData.m) normalises data to a 0-1 range and plots the data in a scatter plot to
    illustrate the distribution. It has the option to use minimum and maximum values to restrict the
    “relevant” information (i.e. if the user is only interested in a certain part of the data). The input
    data has to be a matrix with two columns. The minimum and maximum values will be applied to
@@ -70,9 +70,9 @@ and call `bar(1:3) = foo`
      causes it?
    * Fix the error in the function and use it to plot the data for ages 14-30.   
    
-## More serious debugging
+## 4. More serious debugging
 
-6. Have a look at the file [plotDemographics.m](exercises/plotDemographics.m). This file should plot statistical data of US
+A. Have a look at the file [plotDemographics.m](exercises/plotDemographics.m). This file should plot statistical data of US
    states on a map of the US. Data that can be plotted is available in the [USStates.csv](data/USStates.csv) file. The
    data has multiple columns that contain the data for different population groups. plotdemographics
    accepts a filename followed by the column header of the column containing the data. Finally if the
