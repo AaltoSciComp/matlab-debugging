@@ -62,7 +62,8 @@ This points either to an initialisation problem (i.e. `foo` is too small), or to
 >> linspace = 1:30;
 >> square = linspace^2
 Error using  ^  (line 52)
-Incorrect dimensions for raising a matrix to a power. Check that the matrix is square and the power is a scalar. To perform elementwise matrix powers, use '.^'.
+Incorrect dimensions for raising a matrix to a power. Check that the matrix is square and the power is a scalar. 
+To perform elementwise matrix powers, use '.^'.
 ```
 Again pretty decent error message. It tells you that you can only raise a square matrix to a power, and that to square the elements, you need the pointwise operator. 
 
@@ -117,7 +118,7 @@ Then the execution will only be stopped, right when the error was thrown, and yo
 
 If no error occurs but something anyways goes wrong, it can be useful to start using so called "printf" debugging. This means putting in statements that print variable contents to 
 either a file or the console. This way you can follow the flow of your code. However, these statements will slow down your code substantially (in particular on triton, where all outputs are 
-written to output files). HOweer sometimes there is no way around these kind of measures if the problem canot be found otherwise. 
+written to output files). However, sometimes there is no way around these kind of measures if the problem canot be found otherwise. 
 
 
 
