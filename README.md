@@ -2,7 +2,6 @@
 
 ## Interpreting Error Messages
 
-Having these common mathematical concepts out of the way, let's go to some actual debugging work. When something goes wrong, there will be errors.  
 **First thing: Errors are Good !**  
 As long as you get errors, you actually get a hint to where you problem is. Only if you don't get any errors, but your code still doesn't work as 
 it is intended you start to be in trouble.
@@ -27,7 +26,8 @@ Always read the error message.It often (not always) gives you hints about what w
 >> A = ismember({'a','b','c',{'a'})
  A = ismember({'a','b','c',{'a'})
                                |
-Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+Invalid expression. When calling a function or indexing a variable, use parentheses. 
+Otherwise, check for mismatched delimiters.
 ```
 The error points to a `}` that was seemingly unexpected. Matlab even offers different types of advice (even though they are sometimes not really helpful)
 ```
