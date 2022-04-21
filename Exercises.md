@@ -8,7 +8,7 @@ A. Operator precedence can interfere with results sometimes in very drastic ways
    useful to enclose individual operations in parenthesis. Symbolic variables ( [syms](http://nl.mathworks.com/help/symbolic/syms.html) ) can be used to create
    place holders in a formula. They provide the option to first encode the formula and then evaluate it
    with different variable settings.
-   * Define the term `term = 3ˆ2*x - yˆ3 - 5 / 4` using symbolic variables for x and y and evaluate
+   * Define the term `term = 3^2*x - y^3 - 5 / 4` using symbolic variables for x and y and evaluate
      ( [eval](https://nl.mathworks.com/help/matlab/ref/eval.html) ) it for `x = 3` and `y = 2` .
    * What is the difference between the matlab formula above and the term below (1). Which
      operator precedence rules make the use of parenthesis necessary when implementing Term 1?
@@ -18,7 +18,7 @@ A. Operator precedence can interfere with results sometimes in very drastic ways
    * Implement a function res = calculateterm(x,y), that calculates the term in one assignment using
      parenthesis.
      
-B. Quadratic equations of the form `a x 2 + b x + c` commonly have one or two solutions which can be
+B. Quadratic equations of the form `a * x^2 + b * x + c` commonly have one or two solutions which can be
    easily determined as:
    
    <img src="https://render.githubusercontent.com/render/math?math=x_1,x_2 = \frac{-b}{2a} \pm\sqrt{\frac{b^2}{4a^2} - \frac{c}{a}}">
