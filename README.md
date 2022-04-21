@@ -201,7 +201,7 @@ However, there are a few caveats, that often lead to issues:
 ```
 2. Assignment by value:
 ```matlab
->> A{1]} = Val % Val can be anything
+>> A{1} = Val % Val can be anything
 >> Val = A{1} % Val will be the element contained at position 1 of A
 ```
 The issues start commonly when cell arrays are sliced. 
@@ -214,7 +214,7 @@ Assigning to 2 elements using a simple assignment statement is not supported. Co
 The reason is that indexing a slice of cell array contents `myArray{1:3}` is the same as writing `[myArray{1},myArray{2},myArray{3}]`, and thus would need e.g. deal to assign multiple values simultaneously:
 ```matlab
 >> temp = cell(1,2);
->> temp{:} = deal('a','a');
+>> [temp{:}] = deal('a','a');
 >> temp
 temp =
 
