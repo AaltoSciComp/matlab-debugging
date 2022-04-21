@@ -276,3 +276,6 @@ which is an invalid way to access variable indices.
 
 #### Exercise 3 and 4
 
+### Exercise Solutions
+
+There are coded solutions to the exercises in the solutions branch of this repository.
