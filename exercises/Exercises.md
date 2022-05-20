@@ -13,7 +13,7 @@ A. Operator precedence can interfere with results sometimes in very drastic ways
    * What is the difference between the matlab formula above and the term below (1). Which
      operator precedence rules make the use of parenthesis necessary when implementing Term 1?
 
-     <img src="https://render.githubusercontent.com/render/math?math=3^{2x} - \frac{y^3 - 5}{4}">
+     $$3^{2x} - \frac{y^3 - 5}{4}$$
      
    * Implement a function res = calculateterm(x,y), that calculates the term in one assignment using
      parenthesis.
@@ -21,7 +21,7 @@ A. Operator precedence can interfere with results sometimes in very drastic ways
 B. Quadratic equations of the form `a * x^2 + b * x + c` commonly have one or two solutions which can be
    easily determined as:
    
-   <img src="https://render.githubusercontent.com/render/math?math=x_1,x_2 = \frac{-b}{2a} \pm\sqrt{\frac{b^2}{4a^2} - \frac{c}{a}}">
+   $$x_1,x_2 = \frac{-b}{2a} \pm\sqrt{\frac{b^2}{4a^2} - \frac{c}{a}}$$
    
    You can find a (erronous) implementation of this equation in the [solveSquareFunction.m](exercises/solveSquareFunction.m) file. Test the
    function on the following two parameter sets:
